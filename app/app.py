@@ -32,7 +32,7 @@ device = devicetorch.get(torch)
 torch.set_float32_matmul_precision(["high", "highest"][0])
 
 birefnet = AutoModelForImageSegmentation.from_pretrained(
-    "ZhengPeng7/BiRefNet", trust_remote_code=True
+    "cocktailpeanut/rm", trust_remote_code=True
 )
 birefnet = devicetorch.to(torch, birefnet)
 
